@@ -30,8 +30,12 @@ app.get("/",(req,res,next)=>{
     res.sendFile(__dirname + "/frontend/index.html");
 });
 
+app.get("/admin",(req,res,next)=>{
+    res.sendFile(__dirname + "/frontend/admin.html");
+});
 
 app.use("/",require("./routes/main.js"));
+app.use("/",require("./routes/admin.js"));
 
 app.use((err,req,res,next)=>{
     console.log(err);

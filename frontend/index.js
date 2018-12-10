@@ -88,7 +88,7 @@ $(document).ready(function(){
                         answerSix : answersix,
                         answerSeven : answerseven,
                         answerNine : answernine,
-                        answerTen : answerten,
+                        answerEight : answereight,
                         answerTen : answerten,
                         registrationNumber:localStorage.getItem("user")
                     }
