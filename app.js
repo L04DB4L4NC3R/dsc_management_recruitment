@@ -31,7 +31,7 @@ app.get("/",(req,res,next)=>{
 });
 
 
-
+app.use("/",require("./routes/main.js"));
 
 app.use((err,req,res,next)=>{
     console.log(err);
